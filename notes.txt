@@ -1,0 +1,38 @@
+Breakpoints
+================
+Customisable widths that determine how your responsive layout behaves across different viewport sizes
+
+Bootstrap has 6 different breakpoints, also known as grid tiers.
+- extra small
+- small (sm)
+- medium (md)
+- large (lg)
+- extra large (xl)
+- extra extra large (xxl)
+
+Each breakpoint was chosen to comfortably hold containers whose widths are multiples of 12.
+
+Containers
+=================
+Containers are the most basic layout element in Bootstrap.
+Required when using default Bootstrap grid system.
+
+Bootstrap comes with 3 different containers:
+- .container
+    responsive and has different max-widths according to the different breakpoints.
+    You will see margins on the left and right of the container.
+- .container-{breakpoint}
+    eg. .container-lg (large)
+    The `width: 100%` for sizes lower the breakpoint, and will follow the max-width for each breakpoint beyond the breakpoint size.
+    i.e. .container-lg will have 100% width (no side margins) until the lg breakpoint, then will have width following the max-width of each responsive breakpoint when the size of the viewport increases.
+- .container-fluid
+    Width will always be 100%.
+
+Note that a container is specified using the html class attribute.
+    -> <div class="container-md"> </div>
+
+So the type of containers decides the width of the container, and the width is split into 12 units.
+
+Border class
+--------------
+Creates a border around the element.
