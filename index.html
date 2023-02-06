@@ -24,6 +24,10 @@
         padding-bottom: 2px;
         border-bottom: 2px solid;
       }
+
+      .child {
+        background-color: blue;
+      }
     </style>
   </head>
 
@@ -120,6 +124,54 @@
       <div class="row justify-content-end">
         <div class="col-3">Col-3</div>
         <div class="col-3">Col-3</div>
+      </div>
+    </div>
+
+    <h3>Gutters</h3>
+    <!-- Gaps between column content -->
+    <!-- Specified using the class g-* -->
+    <!-- horizontal gutter -> gx-* -->
+    <!-- vertical gutter -> gy-* -->
+
+    <div class="container">
+      <div>default</div>
+      <div class="row">
+        <div class="col-4"><div class="child">1</div></div>
+        <div class="col-4"><div class="child">2</div></div>
+        <div class="col-4"><div class="child">3</div></div>
+        <div class="col"><div class="child">4</div></div>
+      </div>
+
+      <div>gx-3</div>
+      <div class="row gx-3">
+        <div class="col-4"><div class="child">1</div></div>
+        <div class="col-4"><div class="child">2</div></div>
+        <div class="col-4"><div class="child">3</div></div>
+        <div class="col"><div class="child">4</div></div>
+      </div>
+
+      <div>gx-5</div>
+      <div class="row gx-5">
+        <div class="col-4"><div class="child">1</div></div>
+        <div class="col-4"><div class="child">2</div></div>
+        <div class="col-4"><div class="child">3</div></div>
+        <div class="col"><div class="child">4</div></div>
+      </div>
+
+      <div>gy-5</div>
+      <div class="row gy-5">
+        <div class="col-4"><div class="child">1</div></div>
+        <div class="col-4"><div class="child">2</div></div>
+        <div class="col-4"><div class="child">3</div></div>
+        <div class="col"><div class="child">4</div></div>
+      </div>
+
+      <div>g-2</div>
+      <div class="row g-2">
+        <div class="col-4"><div class="child">1</div></div>
+        <div class="col-4"><div class="child">2</div></div>
+        <div class="col-4"><div class="child">3</div></div>
+        <div class="col"><div class="child">4</div></div>
       </div>
     </div>
 
