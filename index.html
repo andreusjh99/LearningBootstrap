@@ -130,10 +130,12 @@
     </div>
 
     <h3>Gutters</h3>
-    <!-- Gaps between column content -->
+    Gaps between column content. It is basically creating left/right margins.
     <!-- Specified using the class g-* -->
     <!-- horizontal gutter -> gx-* -->
     <!-- vertical gutter -> gy-* -->
+    <br>
+    Note that the child classes in the following example is only to colour the content so that you can see the margins clearly.
 
     <div class="container">
       <div>default</div>
@@ -190,6 +192,7 @@
     </div>
 
     <h1>Utilities</h1>
+
     <h2>Colours</h2>
     There are a few default bootstrap colours. You can use them in any element by just specifying the classes:
     <ul>
@@ -198,6 +201,7 @@
       <li><tt>text-*</tt> for text</li>
       <li><tt>border-*</tt> for border</li>
     </ul>
+    Note that <tt>bg-*</tt> does not set <tt>color</tt> property. Use <tt>text-bg-*</tt> for that.
 
     <div class="row">
       <div class="bg-primary">Primary</div>
@@ -242,7 +246,29 @@
       <div class="border border-light">light</div>
       <div class="border border-dark">dark</div>  
     </div>
-
+    
+    <h2>Spacings</h2>
+    <h3>Margins and paddings</h3>
+    Notation: <tt>{property}{sides}-{breakpoint}-{size}</tt>
+    <br>
+    Eg. <tt>mx-sm-4</tt>
+    <br>
+    Note that <tt>{sides}</tt> and <tt>{breakpoint}</tt> are not compulsory. Blank for sides mean all 4 sides. Blank for breakpoint means the xs breakpoint.
+    <ul>
+      <li><tt>property</tt> is either <tt>m</tt> for margin or <tt>p</tt> for padding.</li>
+      <li><tt>sides</tt> is one of:
+        <ul>
+          <li><tt>t</tt> - for top (margin-top/padding-top)</li>
+          <li><tt>b</tt> - for bottom (margin-bottom/padding-bottom)</li>
+          <li><tt>s</tt> - for start, i.e. left for LTR, right for RTL</li>
+          <li><tt>e</tt> - for end, i.e. right for LTR, left for RTL</li>
+          <li><tt>x</tt> - for both left and right</li>
+          <li><tt>y</tt> - for both top and bottom</li>
+        </ul>
+      </li>
+      <li><tt>size</tt> can be: 0, 1, 2, 3, 4, 5, auto</li>
+    </ul>
+    
     <h1>Components</h1>
     <h2>Buttons</h2>
     <!-- In bootstrap there are several default colours -->
