@@ -16,7 +16,7 @@
         /* padding: 1rem; */
         background-color: #33b5e5;
         border: 2px solid #fff;
-        color: #fff;
+        color: #000000;
       }
 
       .row {
@@ -27,6 +27,7 @@
 
       .child {
         background-color: blue;
+        color: #fff
       }
     </style>
   </head>
@@ -188,6 +189,47 @@
       </div>
     </div>
 
+    <h2>Colours</h2>
+    There are a few default bootstrap colours. You can use them in any element by just specifying the classes:
+    <ul>
+      <li><tt>text-bg-*</tt> for background</li>
+      <li><tt>text-*</tt> for text</li>
+      <li><tt>border-*</tt> for border</li>
+    </ul>
+
+    <div class="row">
+      <div class="text-bg-primary">Primary</div>
+      <div class="text-bg-secondary">secondary</div>
+      <div class="text-bg-success">success</div>
+      <div class="text-bg-danger">danger</div>
+      <div class="text-bg-warning">warning</div>
+      <div class="text-bg-info">info</div>
+      <div class="text-bg-light">light</div>
+      <div class="text-bg-dark">dark</div>
+    </div>
+
+    <div class="row">
+      <div class="text-primary">Primary</div>
+      <div class="text-secondary">secondary</div>
+      <div class="text-success">success</div>
+      <div class="text-danger">danger</div>
+      <div class="text-warning">warning</div>
+      <div class="text-info">info</div>
+      <div class="text-light">light</div>
+      <div class="text-dark">dark</div>  
+    </div>
+
+    <div class="row">
+      <div class="border border-primary">Primary</div>
+      <div class="border border-secondary">secondary</div>
+      <div class="border border-success">success</div>
+      <div class="border border-danger">danger</div>
+      <div class="border border-warning">warning</div>
+      <div class="border border-info">info</div>
+      <div class="border border-light">light</div>
+      <div class="border border-dark">dark</div>  
+    </div>
+
     <h2>Buttons</h2>
     <!-- In bootstrap there are several default colours -->
     <!-- This can be defined using the corresponding bootstrap btn class -->
@@ -304,6 +346,62 @@
         <div class="card-footer">footer in body</div>
       </div>
       <div class="card-footer">footer</div>
+    </div>
+
+    <p>By default, cards have no specific width to start. So they'll be 100% wide unless otherwise stated. You can change this by either specifying the width, as in the above example, or put the card in a bootstrap col as below. Note that any image will also be scaled accordingly.</p>
+
+    Two cards side-by-side:
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <div class="card">
+            <img src="sample.jpg" alt="" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Card 1</h5>
+              <p class="card-text">Card 1 example. Hello bye. Loren Ipsum</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card">
+            <img src="sample.jpg" alt="" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Card 2</h5>
+              <p class="card-text">Card 2 example. Hello bye. Loren Ipsum</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h4>Image overlays</h4>
+    Image as the background. Use <tt>card-img-overlay</tt> instead of <tt>card-body</tt>. Note that if content is larger than image, then content will overflow and display outside the image.
+
+    <div class="col-4">
+      <div class="card">
+        <img src="sample.jpg" alt="" class="card-img">
+        <div class="card-img-overlay">
+          <h5 class="card-title">Card title</h5>
+          <h6 class="card-subtitle">Card subtitle</h6>
+          <p class="card-text">This is a wider card example. Hello bye. Loren Ipsum</p>
+        </div>
+      </div>
+    </div>
+    
+    <h4>Horizontal card</h4>
+    <div class="card">
+      <div class="row g-0">
+        <div class="col-4" style="background-color: #fff;">
+          <img src="sample.jpg" alt="" class="card-img rounded-start">
+        </div>
+        <div class="col-8" style="background-color: #fff;">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card example. This content is a little bit longer. Hello bye. Loren Ipsum.</p>
+            <button class="btn btn-secondary">button</button>
+          </div>
+        </div>
+      </div>
     </div>
     
     <h2>Typography</h2>
