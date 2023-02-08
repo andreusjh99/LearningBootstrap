@@ -189,13 +189,26 @@
       </div>
     </div>
 
+    <h1>Utilities</h1>
     <h2>Colours</h2>
     There are a few default bootstrap colours. You can use them in any element by just specifying the classes:
     <ul>
-      <li><tt>text-bg-*</tt> for background</li>
+      <li><tt>bg-*</tt> for background</li>
+      <li><tt>text-bg-*</tt> for background with text colour optimised for the background</li>
       <li><tt>text-*</tt> for text</li>
       <li><tt>border-*</tt> for border</li>
     </ul>
+
+    <div class="row">
+      <div class="bg-primary">Primary</div>
+      <div class="bg-secondary">secondary</div>
+      <div class="bg-success">success</div>
+      <div class="bg-danger">danger</div>
+      <div class="bg-warning">warning</div>
+      <div class="bg-info">info</div>
+      <div class="bg-light">light</div>
+      <div class="bg-dark">dark</div>
+    </div>
 
     <div class="row">
       <div class="text-bg-primary">Primary</div>
@@ -230,6 +243,7 @@
       <div class="border border-dark">dark</div>  
     </div>
 
+    <h1>Components</h1>
     <h2>Buttons</h2>
     <!-- In bootstrap there are several default colours -->
     <!-- This can be defined using the corresponding bootstrap btn class -->
@@ -476,12 +490,18 @@
     <p class="h1">h1 Bootstrap heading</p>
     <p class="h2">h2 Bootstrap heading</p>
     <p class="h3">h3 Bootstrap heading</p>
+    <p class="h4">h4 Bootstrap heading</p>
+    <p class="h5">h5 Bootstrap heading</p>
+    <p class="h6">h6 Bootstrap heading</p>
 
     <h4>Display headings</h4>
     Display headings - larger, slightly more opinionated heading style
     <p class="display-1">Display 1</p>
     <p class="display-2">Display 2</p>
     <p class="display-3">Display 3</p>
+    <p class="display-4">Display 4</p>
+    <p class="display-5">Display 5</p>
+    <p class="display-6">Display 6</p>
 
     <h4>Blockquotes</h4>
     <blockquote>A well-known quote - the quick brown fox jumps over the lazy dog</blockquote>
@@ -497,13 +517,34 @@
     </ul>
 
     <h5>List-inline</h5>
-    Note that .list-inline needs to be used together with .list-inline-item
+    Note that .list-inline needs to be used together with .list-inline-item. If not, then the items act like it is list-unstyled.
     <ul class="list-inline">
       <li class="list-inline-item">list item 1</li>
       <li class="list-inline-item">list item 2</li>
       <li>list item 3</li>
       <li>list item 4</li>
     </ul>
+
+    <h2>Images</h2>
+
+    <h4>Original image</h4>
+    <img src="sample.jpg" alt="">
+    <h4>Responsive image</h4>
+    <img src="sample.jpg" alt="" class="img-fluid">
+    With the <tt>img-fluid</tt> class, max-width is set to 100% and height is auto.
+
+    <h3>Image as thumbnails</h3>
+    Using <tt>img-thumbnail</tt> class, the image is given a rounded 1px border (configurable). Note that it is also responsive.
+    <img src="sample.jpg" alt="" class="img-thumbnail">
+
+    <h3>Aligning images</h3>
+    Center-align for block-display images using <tt>mx-auto</tt> (margin-x auto). Note the use of BS class <tt>d-block</tt> to specify display=block.
+    <img src="sample.jpg" alt="" class="img-fluid mx-auto d-block" width="200">
+
+    <p>Left-align and right-align images:</p>
+    <img src="sample.jpg" alt="" class="img-fluid float-start" width="200">
+    <img src="sample.jpg" alt="" class="img-fluid float-end" width="200">
+
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
