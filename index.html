@@ -29,6 +29,18 @@
         background-color: blue;
         color: #fff
       }
+
+      tt {
+        color:blueviolet;
+      }
+
+      .border-example {
+        background-color:antiquewhite;
+        width: 5rem;
+        height: 5rem;
+        margin: .25rem;
+        display: inline-block;
+      }
     </style>
   </head>
 
@@ -201,8 +213,10 @@
       <li><tt>text-*</tt> for text</li>
       <li><tt>border-*</tt> for border</li>
     </ul>
-    Note that <tt>bg-*</tt> does not set <tt>color</tt> property. Use <tt>text-bg-*</tt> for that.
+    <p>Note that <tt>bg-*</tt> does not set <tt>color</tt> property. Use <tt>text-bg-*</tt> for that.</p>
+    <p>Note also that for all the colours, you can get a lighter version by adding <tt>subtle</tt> to the end</p>
 
+    <h4>bg</h4>
     <div class="row">
       <div class="bg-primary">Primary</div>
       <div class="bg-secondary">secondary</div>
@@ -212,8 +226,18 @@
       <div class="bg-info">info</div>
       <div class="bg-light">light</div>
       <div class="bg-dark">dark</div>
+      <div class="bg-primary-subtle">Primary subtle</div>
+      <div class="bg-secondary-subtle">secondary subtle</div>
+      <div class="bg-success-subtle">success subtle</div>
+      <div class="bg-danger-subtle">danger subtle</div>
+      <div class="bg-warning-subtle">warning subtle</div>
+      <div class="bg-info-subtle">info subtle</div>
+      <div class="bg-light-subtle">light subtle</div>
+      <div class="bg-dark-subtle">dark subtle</div>
     </div>
 
+    <h4>Text-bg</h4>
+    <p>Note that there is no subtle for <tt>text-bg-*</tt></p>
     <div class="row">
       <div class="text-bg-primary">Primary</div>
       <div class="text-bg-secondary">secondary</div>
@@ -225,6 +249,8 @@
       <div class="text-bg-dark">dark</div>
     </div>
 
+    <h4>text</h4>
+    <p>Note that there is no subtle for <tt>text-*</tt></p>
     <div class="row">
       <div class="text-primary">Primary</div>
       <div class="text-secondary">secondary</div>
@@ -233,9 +259,10 @@
       <div class="text-warning">warning</div>
       <div class="text-info">info</div>
       <div class="text-light">light</div>
-      <div class="text-dark">dark</div>  
+      <div class="text-dark">dark</div>
     </div>
 
+    <h4>border</h4>
     <div class="row">
       <div class="border border-primary">Primary</div>
       <div class="border border-secondary">secondary</div>
@@ -244,7 +271,15 @@
       <div class="border border-warning">warning</div>
       <div class="border border-info">info</div>
       <div class="border border-light">light</div>
-      <div class="border border-dark">dark</div>  
+      <div class="border border-dark">dark</div>
+      <div class="border border-primary-subtle">Primary subtle</div>
+      <div class="border border-secondary-subtle">secondary subtle</div>
+      <div class="border border-success-subtle">success subtle</div>
+      <div class="border border-danger-subtle">danger subtle</div>
+      <div class="border border-warning-subtle">warning subtle</div>
+      <div class="border border-info-subtle">info subtle</div>
+      <div class="border border-light-subtle">light subtle</div>
+      <div class="border border-dark-subtle">dark subtle</div>
     </div>
     
     <h2>Spacings</h2>
@@ -268,7 +303,77 @@
       </li>
       <li><tt>size</tt> can be: 0, 1, 2, 3, 4, 5, auto</li>
     </ul>
+
+    <!-- <h3>Gaps</h3>
+    <p>With grid layouts (css - <tt>display: grid</tt>), you have the <tt>gap</tt> property which you can style.
+      There are: <tt>gap</tt>, <tt>row-gap</tt> and <tt>column-gap</tt> in the default CSS properties.</p>
+    <p>In BS, you can style it with BS classes: <tt>gap-*</tt>, <tt>row-gap-*</tt>, <tt>column-gap-*</tt></p>
+    <p>To do grids with bootstrap, replace <tt>.row</tt> with <tt>.grid</tt>, and replace <tt>.col-*</tt> with <tt>.g-col-*</tt>.</p>
     
+    <div class="container">
+      <div class="grid">
+        <div class="g-col-6">Grid item 1</div>
+        <div class="g-col-6">Grid item 2</div>
+      </div>
+    </div>
+
+    <div class="grid gap-3">
+      <div class="p-2 g-col-6">Grid item 1</div>
+      <div class="p-2 g-col-6">Grid item 2</div>
+      <div class="p-2 g-col-6">Grid item 3</div>
+      <div class="p-2 g-col-6">Grid item 4</div>
+    </div> -->
+
+    <h2>Borders</h2>
+    To have a border around an element using BS, just specify either one of these classes:
+    <ul>
+      <li>border</li>
+      <li>border-top</li>
+      <li>border-bottom</li>
+      <li>border-start</li>
+      <li>border-end</li>
+    </ul>
+    <div>
+      <span class="border-example border border-primary"></span>
+      <span class="border-example border-top border-primary"></span>
+      <span class="border-example border-bottom border-primary"></span>
+      <span class="border-example border-start border-primary"></span>
+      <span class="border-example border-end border-primary"></span>
+    </div>
+
+    <p>Specifying <tt>border-*-0</tt> will take away the border from that side.</p>
+
+    <div>
+      <span class="border-example border border-0 border-primary"></span>
+      <span class="border-example border border-top-0 border-primary"></span>
+      <span class="border-example border border-bottom-0 border-primary"></span>
+      <span class="border-example border border-start-0 border-primary"></span>
+      <span class="border-example border border-end-0 border-primary"></span>
+    </div>
+
+    <h4>Width</h4>
+    Use <tt>border-{nunber}</tt>, where number can be 0, 1, 2, 3, 4, or 5.
+
+    <div>
+      <span class="border-example border border-0 border-primary"></span>
+      <span class="border-example border border-1 border-primary"></span>
+      <span class="border-example border border-2 border-primary"></span>
+      <span class="border-example border border-3 border-primary"></span>
+      <span class="border-example border border-4 border-primary"></span>
+      <span class="border-example border border-5 border-primary"></span>
+    </div>
+
+    <h4>Rounded corners</h4>
+    Use <tt>rounded-{number}</tt>, where number can be 0, 1, 2, 3, 4, or 5.
+    <div>
+      <span class="border-example rounded-0"></span>
+      <span class="border-example rounded-1"></span>
+      <span class="border-example rounded-2"></span>
+      <span class="border-example rounded-3"></span>
+      <span class="border-example rounded-4"></span>
+      <span class="border-example rounded-5"></span>
+    </div>
+
     <h1>Components</h1>
     <h2>Buttons</h2>
     <!-- In bootstrap there are several default colours -->
